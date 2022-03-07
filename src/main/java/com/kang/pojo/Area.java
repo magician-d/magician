@@ -4,17 +4,17 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component//此注解将该类交给spring容器进行管理
-
-public class area {
+@ConfigurationProperties(prefix = "area")//配置属性注解
+public class Area {
     private int Id;
     private String provinceName;
     private String cityName;
     private String countyName;
 
-    public area() {
+    public Area() {
     }
 
-    public area(int id, String provinceName, String cityName, String countyName) {
+    public Area(int id, String provinceName, String cityName, String countyName) {
         Id = id;
         this.provinceName = provinceName;
         this.cityName = cityName;
