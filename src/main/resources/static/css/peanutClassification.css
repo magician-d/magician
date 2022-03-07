@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+}
+#tot{
+    width:100%;
+    height:auto;
+    background-color: #c18F9A;
+
+
+}
+
+
+
+
+#ll{
+
+    width:50px;
+    height: 20px;
+    background-color: #5E6DFC;
+    float:left;
+}
+#boot{
+    width:100%;
+    height: auto;
+
+}
+#left{
+    width:150px;
+    height: 678px;
+    background-color: rgb(247, 247, 247);
+    float:left;
+
+}
+#right{
+
+    float:right;
+
+
+
+}
+
+
+.card-header > a:hover { color: rgb(182, 172, 0);}
+.card-body > li > a:hover { color: rgb(182, 172, 0);}
+.card-body{
+    list-style:none
+}
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/left.css" rel="stylesheet">
+    <link href="css/t.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tool.js"></script>
+    <script src="js/left.js"></script>
+    <script src="js/test.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            var lilist=document.getElementsByTagName("li");
+            for(var i=0;i<lilist.length;i++){
+                lilist[0].onclick=function () {
+                    parent.document.getElementById("iframe_a").src="peanutClassification";
+                }
+                lilist[1].onclick=function () {
+                    parent.document.getElementById("iframe_a").src="informationStatistics";
+                }
+                lilist[2].onclick=function () {
+                    parent.document.getElementById("iframe_a").src="history";
+                }
+
+            }
+            var main=document.getElementById("main");
+            main.onclick=function () {
+                parent.document.getElementById("iframe_a").src="newmain";
+            }
+
+            // $(function(){
+            //     $("#scancode").click(function(){
+            //         //$(window).attr('location',"${pageContext.request.contextPath }/tp/addTp");
+            //         $(window).attr('location',"Pcdatacode.html");
+            //     });
+            // });
+        }
+
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+        <a id="main" class="navbar-brand" href="#">首页</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link" href="#">花生分类</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">信息统计</a>
+                </li>
+                <li>
+                <a class="nav-link" href="#">发展历史</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">信息监测</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<iframe  id="iframe_a" width=868 height=400 scrolling="auto" src="newmain">
+    <div class="ui-wraper" id="Wraper">
+<!--<div id="my_menu" class="sdmenu">-->
+<!--    <div>-->
+<!--        <span class="meau">花生分类</span>-->
+<!--        <a href="#">以地区分类</a>-->
+<!--        <a href="#">以大小分类</a>-->
+<!--        <a href="#">以颜色分类</a>-->
+<!--    </div>-->
+<!--    <div class="collapsed">-->
+<!--        <span class="meau">花生信息统计</span>-->
+<!--        <a href="#">各地区产量</a>-->
+<!--        <a href="#">各种类油产量</a>-->
+<!--        <a href="#">各地花生价格</a>-->
+<!--        &lt;!&ndash;        <a href="#">各种类花生元素含量统计</a>&ndash;&gt;-->
+<!--    </div>-->
+<!--    <div class="collapsed">-->
+<!--        <span class="meau">花生生长环境信息统计</span>-->
+<!--        <a href="#">产量和土地元素</a>-->
+<!--        <a href="#">产量和空气湿度计</a>-->
+<!--        <a href="#">产量和光照时长</a>-->
+<!--    </div>-->
+<!--    <div class="collapsed">-->
+<!--        <span class="meau">花生的发展</span>-->
+<!--        <a href="#">花生起源</a>-->
+<!--        <a href="#">花生轶事</a>-->
+<!--        <a href="#">花生现状</a>-->
+<!--        &lt;!&ndash;        <a href="*">对花生的未来展望</a>&ndash;&gt;-->
+<!--    </div>-->
+<!--</div>--></div>
+</iframe>
+
+</body>
+
+
+
+</html>

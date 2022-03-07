@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/peanutClassification.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <style type="text/css">
+        .btn{
+            font-size: 10px;
+        }
+        .collapsed{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+<div id="left">
+
+
+    <div class="container mt-3">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn collapsed" data-bs-toggle="collapse" href="#collapseOne" aria-expanded="false">
+                        大小分类
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse-show collapse" data-bs-parent="#accordion" style="">
+                    <div class="card-body">
+                        <li class="">
+                            <a class="btn" href="upAdmin" target="iframe" style="text-decoration:none;">管理员信息</a>
+                        </li><br>
+                        <li class="">
+                            <a class="btn" href="addAdmin" target="iframe" style="text-decoration:none;">添加管理员</a>
+                        </li> <br>
+                        <li class="">
+                            <a class="btn" href="delAdmin" target="iframe" style="text-decoration:none;">修改管理员</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn collapsed" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false">
+                        颜色分类
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion" style="">
+                    <div class="card-body">
+
+                        <li class="">
+                            <a class="btn" href="addAdmin" target="iframe" style="text-decoration:none;">学生信息</a>
+                        </li>
+                        <br>
+                        <li class="">
+                            <a class="btn" href="addAdmin" target="iframe" style="text-decoration:none;">添加学生</a>
+                        </li>
+                        <br>
+                        <li class="">
+                            <a class="btn" href="addAdmin" target="iframe" style="text-decoration:none;">修改学生</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</div>
+
+</body>
+</html>

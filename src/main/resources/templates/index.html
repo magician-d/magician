@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>address demo</title>
+		<link href="favicon.ico" rel="shortcut icon">
+		<script type="application/javascript" src="js/jquery.min.js"></script>
+		<script type="application/javascript" src="js/address.js"></script>
+		<script type="application/javascript">
+			$(function () {
+			    address.init({
+			        provinceElement: $("#province1"),
+			        areaElement: $("#area1"),
+			        cityElement: $("#city1")
+			    });
+			    var province = "广东省";
+			    var city = "深圳市";
+			    var area = "坪山区";
+
+			
+			    address.query(province, city, area);
+			});
+		</script>
+	</head>
+	<body>
+		<select id="province1"></select>
+		<select id="city1"></select>
+		<select id="area1"></select>
+		
+	</body>
+</html>

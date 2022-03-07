@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*list-style-type: none;*/
+}
+
+/*body{*/
+/*    height: 800px;*/
+/*    width: 990px;*/
+/*    background-color: aqua;*/
+/*    font:12px/180 Arial, Helvetica, sans-self, "新宋体";*/
+/*}*/
+#my_menu{
+
+    width: 150px;
+    background-color: white;
+    margin:0px auto;
+    border: 5px solid black;
+    overflow: hidden;
+    float:left;
+
+
+    /*float:left;*/
+}
+/*.meau{*/
+/*    width: 300px;*/
+/*}*/
+a{
+    border:0;
+    display: block;
+    font-size: 13px;
+    padding: 5px;
+    text-decoration:none;
+    color: black;
+}
+a:hover{
+    color:mediumvioletred;
+    background-color:rgb(253 124 178);
+
+}
+.meau{
+    color:white;
+    background-color: black;
+
+
+}
+meau:hover{
+    text-decoration: underline;
+    background-color: darkcyan;
+
+}
